@@ -5,7 +5,7 @@
 ![Package Dependency](https://david-dm.org/coco-template/nodejs-package.svg?style=flat)
 ![Package DevDependency](https://david-dm.org/coco-template/nodejs-package/dev-status.svg?style=flat)
 
-A universal seed for nodejs package.
+develop creative nodejs package.
 
 ## Usage
 
