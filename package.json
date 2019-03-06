@@ -16,7 +16,8 @@
     "compile:cjs": "babel src --source-maps --out-dir lib --extensions '.js,.ts'"
   },
   "files": [
-    "lib"
+    "lib",
+    "native"
   ],
   "repository": {
     "type": "git",
