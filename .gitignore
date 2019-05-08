@@ -44,5 +44,4 @@ jspm_packages
 /dist
 /lib
 /native
-/__tests__/*.js
 
