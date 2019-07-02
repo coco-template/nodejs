@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-package",
-  "version": "0.3.0",
-  "description": "A universal seed for nodejs package.",
+  "name": "nodejs",
+  "version": "0.1.0",
+  "description": "create reactive nodejs package basement",
   "main": "lib/index.js",
   "types": "native/index.d.ts",
   "engines": {
@@ -13,7 +13,8 @@
     "test:cov": "jest --watch",
     "clean": "rm -rf lib native",
     "compile:native": "tsc --declaration --outDir native",
-    "compile:cjs": "babel src --source-maps --out-dir lib --extensions '.js,.ts'"
+    "compile:cjs": "babel src --source-maps --out-dir lib --extensions '.js,.ts'",
+    "compile:watch": "babel src --out-dir lib --extensions '.js,.ts' --watch"
   },
   "files": [
     "lib",
@@ -21,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/coco-template/nodejs-package.git"
+    "url": "git+ssh://git@github.com/coco-template/nodejs.git"
   },
   "keywords": [
     "nodejs",
@@ -40,9 +41,9 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coco-template/nodejs-package/issues"
+    "url": "https://github.com/coco-template/nodejs/issues"
   },
-  "homepage": "https://github.com/coco-template/nodejs-package#README",
+  "homepage": "https://github.com/coco-template/nodejs#README",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
