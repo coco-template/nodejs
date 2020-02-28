@@ -12,7 +12,7 @@
     "test": "jest --coverage",
     "test:cov": "jest --watch",
     "clean": "rm -rf lib native",
-    "compile:native": "tsc --declaration --outDir native",
+    "compile:native": "tsc --declaration --emitDeclarationOnly --outDir native",
     "compile:cjs": "babel src --source-maps --out-dir lib --extensions '.js,.ts'",
     "compile:watch": "babel src --source-maps --out-dir lib --extensions '.js,.ts' --watch"
   },
