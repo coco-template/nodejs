@@ -1,6 +1,5 @@
 {
   "*.{ts,tsx}": [
-    "eslint --cache",
     "prettier --write"
   ],
   "*.{js,css,md,yml}": "prettier --write"
