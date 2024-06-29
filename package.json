@@ -1,25 +1,25 @@
 {
-  "name": "@coco/nodejs-template",
+  "name": "@coco-template/polaris",
   "version": "0.1.0",
-  "description": "create reactive nodejs package basement",
+  "description": "yet, personal lite module baseline",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=18.0.0"
   },
+  "packageManager": "pnpm@9.4.0",
   "scripts": {
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "prebuild": "rm -rf lib",
+    "prebuild": "rimraf lib types",
     "prepublishOnly": "npm run build",
-    "build": "tsc --project tsconfig.production.json",
-    "build:watch": "tsc --project tsconfig.production.json --watch",
+    "build": "rollup -c rollup.config.mjs",
     "prepare": "husky"
   },
   "files": ["lib", "types"],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/coco-template/nodejs.git"
+    "url": "git+ssh://git@github.com/coco-template/polaris.git"
   },
   "keywords": [],
   "author": "huang.jian <hjj491229492@hotmail.com>",
@@ -35,9 +35,9 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coco-template/nodejs/issues"
+    "url": "https://github.com/coco-template/polaris/issues"
   },
-  "homepage": "https://github.com/coco-template/nodejs#README",
+  "homepage": "https://github.com/coco-template/polaris#README",
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@commitlint/cli": "^19.3.0",
@@ -54,6 +54,7 @@
     "lint-staged": "^15.2.7",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.3.2",
+    "rimraf": "^5.0.7",
     "rollup": "^4.18.0",
     "rollup-plugin-ts": "^3.4.5",
     "typescript": "^5.5.2"
