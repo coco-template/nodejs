@@ -1,6 +1,4 @@
 {
-  "*.{ts,tsx}": [
-    "prettier --write"
-  ],
-  "*.{js,css,md,yml}": "prettier --write"
+  "*.{ts,tsx,js,jsx,json}": ["biome check --write --no-errors-on-unmatched"],
+  "*.{css,md,yml,html}": "prettier --write"
 }

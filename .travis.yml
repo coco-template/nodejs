@@ -1,9 +1,9 @@
 sudo: false
 language: node_js
 cache:
-  yarn: true
+  pnpm: true
 node_js:
   - 10
 after_success:
-  - yarn add coveralls
+  - pnpm add coveralls
   - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls

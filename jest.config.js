@@ -1,6 +1,6 @@
 module.exports = {
   transform: {
-    '\\.(ts|tsx|js|jsx)$': 'esbuild-jest',
+    '\\.(ts|tsx|js|jsx)$': '@swc/jest',
   },
   moduleFileExtensions: ['js', 'ts'],
   moduleDirectories: ['node_modules'],
@@ -8,6 +8,5 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageReporters: ['lcov', 'html'],
   testEnvironment: 'node',
-  testMatch: ['<rootDir>/__tests__/**/*.spec.{js,ts}'],
   testPathIgnorePatterns: ['/node_modules/'],
-};
+}
