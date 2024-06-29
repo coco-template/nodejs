@@ -1,4 +1,4 @@
-import type { PasswordChecker } from '../PasswordChecker'
+import type { PasswordChecker } from './PasswordChecker'
 
 export class PasswordIngredientChecker implements PasswordChecker {
   /**

@@ -1,4 +1,4 @@
-import type { PasswordChecker } from '../PasswordChecker'
+import type { PasswordChecker } from './PasswordChecker'
 
 /**
  * 密码规则：密码长度大于等于8

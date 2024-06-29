@@ -1,4 +1,4 @@
-import type { PasswordChecker } from '../PasswordChecker'
+import type { PasswordChecker } from './PasswordChecker'
 import { PasswordIngredientChecker } from './PasswordIngredientChecker'
 import { PasswordLengthChecker } from './PasswordLengthChecker'
 

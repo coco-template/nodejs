@@ -41,8 +41,5 @@ jspm_packages
 .idea
 
 # Production
-/dist
-/lib
-/native
-/types
-
+dist
+es
